@@ -1,10 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap');
+
 body {
   background-color: #1c1c1c;
   margin: 0;
+  color: #fdfdfd;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar {
   width: 250px;
   height: 100%;
   background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar > .header > .links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar > .header > .links > .item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  flex: none;
+  order: 0;
+  margin: 16px 0px;
+  padding: 0 24px;
+}
+
+.sidebar > .header > .main {
+  font-family: "Inter", sans-serif;
+  padding: 60px 24px;
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 900;
+}
+
+.footer {
+  padding: 24px 24px;
+  font-size: 13px;
+}
+
+.footer > .text {
+  font-weight: bold;
+}
+
+.footer > .alttext {
+  color: #414141;
 }

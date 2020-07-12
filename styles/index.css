@@ -21,7 +21,12 @@ body {
   padding: 0;
 }
 
-.sidebar > .header > .links > .item {
+.sidebar > .header > .links > .listitem {
+  margin: 16px 0px;
+  padding: 0 24px;
+}
+
+.sidebar > .header > .links > .listitem > .linkitem {
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
@@ -29,8 +34,15 @@ body {
   letter-spacing: 0.1em;
   flex: none;
   order: 0;
-  margin: 16px 0px;
-  padding: 0 24px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar > .header > .links > .listitem > .linkitem:hover {
+  background: linear-gradient(126.8deg, rgba(145, 98, 182, 0.9) 0%, rgba(72, 154, 200, 0.9) 96.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sidebar > .header > .main {

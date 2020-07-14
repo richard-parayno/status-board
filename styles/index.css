@@ -5,11 +5,11 @@ body {
   margin: 0;
   color: #fdfdfd;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  height: 100%;
 }
 
 .sidebar {
-  width: 250px;
-  height: 100%;
   background-color: #0f0f0f;
   display: flex;
   flex-direction: column;
@@ -65,4 +65,93 @@ body {
 
 .footer > .alttext {
   color: #414141;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  padding: 60px;
+}
+
+.main-container > .user-card {
+  min-width: 250px;
+  max-width: 250px;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  border: 1px dotted yellow;
+  color: #fdfdfd;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.user-card > .user-title {
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.user-card > .user-img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+
+.user-card > .user-name {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.user-card > .user-experience {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-card > .user-social {
+  color: #FDFDFD;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-card > .user-social:hover {
+  background: linear-gradient(126.8deg, rgba(145, 98, 182, 0.9) 0%, rgba(72, 154, 200, 0.9) 96.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user-card > .user-description {
+  font-size: 14px;
+  line-height: 16px;
+  color: #FDFDFD;
+}
+
+.user-card > .user-cta {
+  font-weight: bold;
+  border: 1px solid #FDFDFD;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #FDFDFD;
+  text-decoration: none;
+  padding: 7px 23px;
+  align-self: start;
+}
+
+.-margin-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.-margin-4 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
